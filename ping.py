@@ -1,10 +1,10 @@
 import subprocess
+from tabulate import tabulate
 
 def ping(host):
     result = subprocess.run(['ping', '-c', '1', '-W', '1', host], stdout=subprocess.PIPE)
 
     if result.returncode == 0:
-
         output = result.stdout.decode('utf-8')
         time_index = output.find('time=')
         if time_index != -1:
@@ -18,9 +18,14 @@ def ping(host):
 host = 'www.google.com'
 response_time = ping(host)
 if response_time is not None:
-    print(f'O tempo de resposta para {host} foi de {response_time:.2f} ms')
+    table = [
+        ['Host', 'Response Time (ms)'],
+        [host, response_time]
+    ]
+    print(tabulate(table, headers='firstrow', tablefmt='fancy_grid'))
 else:
     print(f'{host} não respondeu ao ping')
+
 
 
 

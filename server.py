@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, render_template
+from tabulate import tabulate
 
 app = Flask(__name__)
 
@@ -7,12 +8,14 @@ messages = []
 @app.route('/messages', methods=['GET', 'POST'])
 def handle_messages():
     if request.method == 'POST':
-        print("Cabecalho da requsição --> : ", request.headers)
+        print("Cabecalho da requsição --> : ")
+        print(tabulate(request.headers.items(), headers=["Nome do cabeçalho", "Valor do cabeçalho"]))
         message = request.json['message']
         messages.append(message)
         return jsonify({'message': 'Message sent successfully!'})
     elif request.method == 'GET':
-        print("Cabecalho da requsição --> : ", request.headers)
+        print("Cabecalho da requsição --> : ")
+        print(tabulate(request.headers.items(), headers=["Nome do cabeçalho", "Valor do cabeçalho"]))
         return jsonify({'messages': messages})
 
 @app.route('/')
