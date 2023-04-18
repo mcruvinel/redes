@@ -12,6 +12,7 @@ def handle_messages():
         messages.append(message)
         return jsonify({'message': 'Message sent successfully!'})
     elif request.method == 'GET':
+        print("Cabecalho da requsição --> : ", request.headers)
         return jsonify({'messages': messages})
 
 @app.route('/')
