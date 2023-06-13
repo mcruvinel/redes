@@ -17,7 +17,7 @@ Essas três formas de controle de acesso podem ser implementadas de maneira isol
 
 
 
-
+**Aplicação do conceito em uma empresa real: Utilizamosn nesse caso, o Google Drive
 
 
 **O Google Drive utiliza as três formas de controle de acesso - Controle de Acesso Baseado em Identidade (IBAC), Controle de Acesso Baseado em Função (RBAC) e Controle de Acesso Baseado em Regras (RBAC) - para gerenciar e controlar o acesso aos arquivos e pastas armazenados na plataforma. Vamos ver como cada um desses controles de acesso é aplicado no Google Drive:**
