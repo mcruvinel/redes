@@ -32,3 +32,37 @@ Essas três formas de controle de acesso podem ser implementadas de maneira isol
    - O Google Drive suporta o controle de acesso baseado em regras por meio das configurações de compartilhamento avançadas. Ao compartilhar um arquivo ou pasta, é possível definir regras específicas que determinam o acesso com base em condições predefinidas. Por exemplo, é possível configurar uma regra que concede acesso apenas a usuários específicos com base em suas contas do Google ou domínios associados. Além disso, o Google Drive permite definir datas de expiração para compartilhamentos e limitar o número de downloads de um arquivo compartilhado.
 
 Essas três formas de controle de acesso são implementadas no Google Drive para garantir que os usuários tenham acesso seguro e controlado aos arquivos e pastas. Elas permitem que os proprietários de arquivos definam permissões específicas para cada usuário ou grupo de usuários, estabeleçam regras de compartilhamento personalizadas e controlem o acesso com base na identidade dos usuários. Isso ajuda a proteger a confidencialidade e a integridade dos dados armazenados no Google Drive.
+
+**DEMONSTRAÇÃO DO CONTROLE DE ACESSO BASEADO EM IDENTIDADE NO GOOGLE DRIVE**
+
+![image](https://github.com/mcruvinel/redes/assets/99694882/cfe240cd-cf3a-4de1-9891-ca7e64c20d73)
+
+
+**AUTENTICAÇÃO DE DOIS FATORES, AINDA NO CONTROLE DE ACESSO BASEADO EM IDENTIDADES**
+
+![image](https://github.com/mcruvinel/redes/assets/99694882/8520e5f2-cb9b-4288-b051-114e4c657fe3)
+![image](https://github.com/mcruvinel/redes/assets/99694882/5a3311d5-dff2-4ec7-ada9-4b1d535de24f)
+
+
+**CONTROLE DE ACESSO BASEADO EM FUNÇÃO**
+
+![image](https://github.com/mcruvinel/redes/assets/99694882/5f349631-2fa5-430c-bf59-9a0bb8e8c0c8)
+
+**AO COMPARTILHAR A PASTA, COMO SOU O ADMNISTRADOR E CRIADOR, CONSIGO DEFINIR FUNÇÃO AO NOVO INTEGRANTE, E ESSAS FUNÇÕES LHE GARANTEM ALGUNS ACESSOS, COMO EDITAR, INCLUIR E APAGAR ARQUIVOS, OU SOMENTE VISUALIZA-LOS**
+
+![image](https://github.com/mcruvinel/redes/assets/99694882/52eb5cf9-5ca2-493a-9704-28d0d8f43856)
+
+
+**CONTROLE DE ACESSO BASEADO EM REGRA**
+Aqui, adicionei uma foto ao google drive
+![image](https://github.com/mcruvinel/redes/assets/99694882/f6a0f63a-269e-42b5-8391-107c2ffecc7c)
+
+E ao compartilha-la, posso preestabelecer regras de acesso a esse arquivo, como permitir ou não o download!!
+![image](https://github.com/mcruvinel/redes/assets/99694882/a4c1eecf-efa6-4155-9112-6b1c8465587a)
+
+Ou posso selecionar somente pessoas que podem acessa-las, liberando o email delas (identidade) ou posso deixar qualquer pessoa com o link acessar:
+![image](https://github.com/mcruvinel/redes/assets/99694882/040a8edc-460a-4a94-ae4a-bc1b46c269b9)
+
+E para encerrar, todos nos sabemos que o nome do arquivo é falso, o Vasco nao tem mundial!
+![image](https://github.com/mcruvinel/redes/assets/99694882/40918dd1-8e6d-420a-ae0c-c483e64204a1)
+
